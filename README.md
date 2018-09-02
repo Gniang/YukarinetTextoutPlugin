@@ -2,9 +2,9 @@
 yukarinet text output plug-in .
 
 
-##Install
+## Install
 Copy to this folder. 
 \[Ykarinet Installed Folder\]/Plugins/
 
-##Decription
+## Decription
 This plugin keeps appending files infinitely.
