@@ -1,0 +1,13 @@
+﻿<Window x:Class="YukarinetTextout.Setting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YukarinetTextout"
+             mc:Ignorable="d" d:DesignWidth="458.523" WindowStyle="ToolWindow" Height="104.432" Width="600">
+    <Grid>
+        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500"/>
+        <Button x:Name="btnDialog" Content="参照" HorizontalAlignment="Right" Margin="0,13,37,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.558,-0.018" Click="btnDialog_Click"/>
+        <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Right" Margin="0,44,10,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.558,-0.018" IsDefault="True" Click="btnOk_Click"/>
+    </Grid>
+</Window>
