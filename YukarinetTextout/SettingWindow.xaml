@@ -4,10 +4,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YukarinetTextout"
-             mc:Ignorable="d" d:DesignWidth="458.523" WindowStyle="ToolWindow" Height="104.432" Width="600">
-    <Grid>
-        <TextBox x:Name="txtPath" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500"/>
-        <Button x:Name="btnDialog" Content="参照" HorizontalAlignment="Right" Margin="0,13,37,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.558,-0.018" Click="btnDialog_Click"/>
-        <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Right" Margin="0,44,10,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.558,-0.018" IsDefault="True" Click="btnOk_Click"/>
+             mc:Ignorable="d" d:DesignWidth="458.523" WindowStyle="ToolWindow" Height="94.004" Width="600" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="495*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtPath" Height="23" Margin="10,4,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button x:Name="btnDialog" Content="参照" Margin="10,4,10,0" RenderTransformOrigin="0.558,-0.018" Click="btnDialog_Click" Grid.Column="1" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="btnOk" Content="OK" Margin="10,0" VerticalAlignment="Top" RenderTransformOrigin="0.558,-0.018" IsDefault="True" Click="btnOk_Click" Height="23" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"/>
     </Grid>
 </Window>

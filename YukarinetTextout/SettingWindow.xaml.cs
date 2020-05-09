@@ -62,7 +62,7 @@ namespace YukarinetTextout
             bool? result = saveFileDialog.ShowDialog();
             if (result == true)
             {
-                txtPath.Text = saveFileDialog.SafeFileName;
+                txtPath.Text =  saveFileDialog.FileName;
             }
         }
 
